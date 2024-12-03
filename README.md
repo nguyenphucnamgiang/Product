@@ -53,7 +53,23 @@ To set up the project, you can use either **Conda** or **Pip** to install the re
     pip install -r requirements.txt
     ```
 
+## Pre-trained Models
+
+the author provide **three available models** of varying scales for robust relative depth estimation:
+
+| Model | Params | Checkpoint |
+|:-|-:|:-:|
+| Depth-Anything-V2-Small | 94.6 M | [Download](https://huggingface.co/depth-anything/Depth-Anything-V2-Small/resolve/main/depth_anything_v2_vits.pth?download=true) |
+| Depth-Anything-V2-Base | 371 M | [Download](https://huggingface.co/depth-anything/Depth-Anything-V2-Base/resolve/main/depth_anything_v2_vitb.pth?download=true) |
+| Depth-Anything-V2-Large | 1.24 G | [Download](https://huggingface.co/depth-anything/Depth-Anything-V2-Large/resolve/main/depth_anything_v2_vitl.pth?download=true) |
+
 ## Usage
+
+### Prepare models
+
+Download the checkpoints listed [above](#pre-trained-models) and put them under the `checkpoints` directory.
+
+### Running script
 
 Once the environment is set up, you can use the following command to run the program and generate the point cloud from an image:
 
